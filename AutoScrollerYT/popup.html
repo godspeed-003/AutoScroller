@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Scroller</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>Auto Scroller</h2>
+  <div>
+    <label for="startDelay">Start Delay (seconds):</label>
+    <input type="number" id="startDelay" min="0" value="5">
+  </div>
+  <div>
+    <label for="delay">Delay Between Scrolls (seconds):</label>
+    <input type="number" id="delay" min="0.1" step="0.1" value="1">
+  </div>
+  <div>
+    <label for="count">Number of Scrolls:</label>
+    <input type="number" id="count" min="1" value="10">
+  </div>
+  <button id="startBtn">Start Scrolling</button>
+  <button id="stopBtn">Stop Scrolling</button>
+  <p id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
